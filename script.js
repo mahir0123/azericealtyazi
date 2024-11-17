@@ -1,6 +1,6 @@
 ﻿const filmler = [
     {
-        ad: "How to Train Your Dragon",
+        ad: "How to Train Your Dragon Homecoming",
         poster: "httydh.jpg",
         altyazi: "https://download1478.mediafire.com/b4ww810d7mog-R8A7L2j5myrlrNa1hcec0-HCTfY0cVzKutNIdRq-w7Vj4hJaJMR2Ee1BqaYQ826ehaAKULglmPoABZ7W7vFitaYBNecmFgzLSVHRcNLojkOZctlCiovDJBmdkeNzUgfdgVr24JnI_YJeKrX4lRFMgStUME35IeRHg/7hdl5fc9hpvkfur/httydh.srt",
         dili: "Azerice",
@@ -13,7 +13,15 @@
         altyazi: "https://download1589.mediafire.com/hupgvolztnrggHpBWfcz5D4lVeje-ptJcuQxowP-7ezIUlJsJ7zlfHzvG-yrSF06egnUkr2xQ81TdmqcBj-hKxvKMQs9RkbHDf2E3LgzynhXzlY3p9Hn7HVSe850bElw6ZxS-SpIdegH660F8LM31ar5U7piD5v3uzUy8LCYwRGoiQ/lbltxvmvzl4te68/carlsdate.srt",
         dili: "Azerice",
         durumu: "Tamamlanmış"
-    }
+    },
+
+  {
+        ad: "Deadpool & Wolverine",
+        poster: "daw.jpg",
+        altyazi: "https://www.mediafire.com/file/xsv7pr3p2tdxqun/daw_aze.srt/file",
+        dili: "Azerice",
+        durumu: "Tamamlanmış"
+    },
 ];
 
 function aramaYap() {
@@ -37,7 +45,7 @@ function aramaYap() {
         anaMenuButonu.style.display = "block"; // Ana Menü butonunu göster
         altyaziNasılKurulurButonu.style.display = "block"; // Altyazı nasıl kurulur butonunu göster
     } else {
-        filmDetay.innerHTML = `<p style="color: red;">Film bulunamadı. Lütfen doğru yazdığınızdan emin olun.</p>`;
+        filmDetay.innerHTML = `<p style="color: red;">Film bulunamadı. Lütfen filmin IMDb ismini aratin.</p>`;
         anaMenuButonu.style.display = "block"; // Ana Menü butonunu göster
         altyaziNasılKurulurButonu.style.display = "block"; // Altyazı nasıl kurulur butonunu göster
     }
